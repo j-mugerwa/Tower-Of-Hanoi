@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tower of Hanoi</h1>
+
+    <label for="num-disks">Number of Disks:</label>
+    <input type="number" id="num-disks" min="1" max="6" value="3">
+    <button onclick="startGame()">Start Game</button>
+    <!--<button onclick="solveAutomatically()">Computer Solution</button>-->
+    <!--<button onclick="togglePauseResume()" id="pause-resume-btn" disabled>Pause</button>-->
+    <div id="layout-container">
+        <div id="game-container">
+            <div class="peg" id="peg1" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+            <div class="peg" id="peg2" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+            <div class="peg" id="peg3" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+        </div>
+
+        <!-- Move Counter Box -->
+        <div id="move-counter">
+            <h3>Move Counter</h3>
+            <p><strong>Minimum Moves:</strong> <span id="min-moves">0</span></p>
+            <p><strong>Moves Left:</strong> <span id="moves-left">0</span></p>
+            <p><strong>Total Moves:</strong> <span id="total-moves">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

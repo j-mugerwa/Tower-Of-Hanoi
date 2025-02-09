@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+#game-container {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    height: 300px;
+    position: relative;
+    margin-top: 20px;
+}
+#layout-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px; /* Space between game and counter */
+}
+
+.peg {
+    width: 10px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.disk {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    cursor: grab;
+    margin-top: 2px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+#move-counter {
+    border: 2px solid black;
+    padding: 15px;
+    width: 200px;
+    background-color: #f4f4f4;
+}
